@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+</head>
+<body>
+    <button id="prev" onclick="goback()">previous</button>
+    <img id="img" src="C:\Users\phaniti bhanu prasad\OneDrive\Desktop\ethnotech\html and css\web\i1.jpg" height="500px" width="500px">
+    <button id="next" onclick="goforward()">Next</button>
+    <script>
+        let imgEl=document.getElementById("img");
+        let index=1;
+        function goback(){
+            index--;
+            imgEl.setAttribute("src","i"+index+".jpg")
+
+        }
+        function goforward(){
+            index++;
+            imgEl.setAttribute("src","i"+index+".jpg")
+
+        }
+
+    </script>
+</body>
+</html>
